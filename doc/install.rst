@@ -53,7 +53,7 @@ as :source_download:`zip` and :source_download:`tar.gz`.
 
 You can always get the latest code with :command:`git`::
 
- git clone https://github.com/JonnyJD/python-discid.git
+ git clone https://github.com/metabrainz/python-discid.git
 
 Installation
 ************
@@ -69,7 +69,7 @@ You can test your setup (including `Libdiscid`_) with::
 
  python setup.py test
 
-.. _GitHub: https://github.com/JonnyJD/python-discid
+.. _GitHub: https://github.com/metabrainz/python-discid
 
 Libdiscid
 ---------

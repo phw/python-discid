@@ -14,7 +14,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 # Please submit bug reports to GitHub:
-# https://github.com/JonnyJD/python-discid/issues
+# https://github.com/metabrainz/python-discid/issues
 """utility functions
 """
 

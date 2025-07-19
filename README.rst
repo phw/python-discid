@@ -49,4 +49,4 @@ You can submit tickets at `GitHub`_.
 .. _readthedocs.org: https://python-discid.readthedocs.org/
 .. _libdiscid: http://musicbrainz.org/doc/libdiscid
 .. _Disc ID Calculation: http://musicbrainz.org/doc/Disc_ID_Calculation
-.. _GitHub: https://github.com/JonnyJD/python-discid
+.. _GitHub: https://github.com/metabrainz/python-discid

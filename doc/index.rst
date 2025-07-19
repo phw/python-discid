@@ -47,7 +47,7 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`search`
 
-.. _GitHub: https://github.com/JonnyJD/python-discid
+.. _GitHub: https://github.com/metabrainz/python-discid
 .. _MusicBrainz: http://musicbrainz.org
 .. _python-musicbrainzngs: https://python-musicbrainzngs.readthedocs.org/
 .. _python-libdiscid: http://pythonhosted.org/python-libdiscid/

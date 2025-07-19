@@ -36,7 +36,7 @@ version = ".".join(discid.__version__.split("-")[0].split(".")[0:2])
 release = discid.__version__
 # see below for "current" = base version with "-dev" appended if necessary
 
-download_base = "https://github.com/JonnyJD/python-discid/archive"
+download_base = "https://github.com/metabrainz/python-discid/archive"
 if release.endswith("dev"):
     current = "%s-dev" % version
     download_url = "%s/master.%%s" % download_base
@@ -46,7 +46,7 @@ else:
 
 extlinks = {
   'source_download': (download_url, ''),
-  'issue': ('https://github.com/JonnyJD/python-discid/issues/%s', '#'),
+  'issue': ('https://github.com/metabrainz/python-discid/issues/%s', '#'),
   'musicbrainz': ('http://musicbrainz.org/doc/%s', ''),
 }
 
