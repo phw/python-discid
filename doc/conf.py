@@ -67,25 +67,15 @@ rst_epilog = """
 
 # -- Options for HTML output ---------------------------------------------------
 
-html_theme = 'default'
-# force default theme on readthedocs to apply our theme options
-html_style = "/default.css"
-# MusicBrainz colors
+html_theme = 'sphinx_rtd_theme'
+
+# Theme options are theme-specific and customize the look and feel of a theme
+# further.  For a list of options available for each theme, see the
+# documentation.
 html_theme_options = {
-        "footerbgcolor": "#e7e7e7",
-        "footertextcolor": "#444444",
-        "sidebarbgcolor": "#ffffff",
-        "sidebartextcolor": "#000000",
-        "sidebarlinkcolor": "002bba",
-        "relbarbgcolor": "#5c5789",
-        "relbartextcolor": "#000000",
-        "bgcolor": "#ffffff",
-        "textcolor": "#000000",
-        "linkcolor": "#002bba",
-        "headbgcolor": "#ffba58",
-        "headtextcolor": "#515151",
-        "codebgcolor":  "#dddddd",
-        "codetextcolor": "#000000"
+    'collapse_navigation': True,
+    'navigation_depth': 2,
+    'version_selector': True,
 }
 
 html_title = "%s %s documentation" % (project, current)
