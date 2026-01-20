@@ -46,4 +46,4 @@ dev = [
 src=["discid"]
 
 [tool.ruff.lint]
-select = ["E", "F", "W", "B"]
+select = ["E", "F", "W", "B", "UP"]
