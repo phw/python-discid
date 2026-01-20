@@ -51,11 +51,11 @@ release = discid.__version__
 
 download_base = "https://github.com/metabrainz/python-discid/archive"
 if release.endswith("dev"):
-    current = "%s-dev" % version
-    download_url = "%s/master.%%s" % download_base
+    current = f"{version}-dev"
+    download_url = f"{download_base}/master.%s"
 else:
     current = version
-    download_url = "%s/v%s.%%s" % (download_base, release)
+    download_url = f"{download_base}/v{release}.%s"
 
 extlinks = {
     "source_download": (download_url, "%s"),
@@ -73,12 +73,9 @@ rst_prolog = """
 .. currentmodule:: discid
 """
 
-rst_epilog = (
-    """
-.. |current| replace:: %s
+rst_epilog = f"""
+.. |current| replace:: {current}
 """
-    % current
-)
 
 # -- Options for HTML output ---------------------------------------------------
 
@@ -93,7 +90,7 @@ html_theme_options = {
     "version_selector": True,
 }
 
-html_title = "%s %s documentation" % (project, current)
+html_title = f"{project} {current} documentation"
 html_domain_indices = False
 
 # -- Options for LaTeX output --------------------------------------------------
