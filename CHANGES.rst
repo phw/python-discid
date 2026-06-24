@@ -1,6 +1,10 @@
 Changelog
 =========
 
+Changes in 1.4.1 (2026-06-24):
+------------------------------
+ * Mark package as typed by adding a ``py.typed`` marker file.
+
 Changes in 1.4.0 (2026-03-30):
 ------------------------------
  * Added type hints to the public API for better IDE support and type checking.
