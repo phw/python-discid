@@ -41,7 +41,7 @@ def _decode(byte_string: bytes | str) -> str:
     raise TypeError("Unexpected type, expected string or bytes")
 
 
-def _sectors_to_seconds(sectors: int | float) -> int:
+def _sectors_to_seconds(sectors: float) -> int:
     """Round sectors to seconds like done on MusicBrainz Server
 
     The result is forced to :obj:int to make formatted output easier.
