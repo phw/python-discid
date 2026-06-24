@@ -30,8 +30,6 @@ def _encode(string: str | bytes) -> bytes:
     elif isinstance(string, bytes):
         return string
     raise TypeError("Unexpected type, expected string or bytes")
-    # UnicodeDecodeError (Python 2) is NOT caught
-    # device names should be ASCII
 
 
 def _decode(byte_string: bytes | str) -> str:
@@ -48,10 +46,7 @@ def _sectors_to_seconds(sectors: int | float) -> int:
 
     The result is forced to :obj:int to make formatted output easier.
     """
-    # note that `round(2.5) == 2` on Python 3
-    # and math.floor doesn't return :obj:int on Python 2
-    # additionally always `int / int =^= int` in Python 2
-    return int(math.floor((sectors / float(SECTORS_PER_SECOND)) + 0.5))
+    return math.floor((sectors / float(SECTORS_PER_SECOND)) + 0.5)
 
 
 # vim:set shiftwidth=4 smarttab expandtab:
