@@ -398,11 +398,11 @@ class Disc:
     @property
     def tracks(self) -> list[Track]:
         """A list of :class:`Track` objects for this Disc."""
-        tracks: list[Track] = []
         assert self._success
-        for number in range(self.first_track_num, self.last_track_num + 1):
-            tracks.append(Track(self, number))
-        return tracks
+        return [
+            Track(self, number)
+            for number in range(self.first_track_num, self.last_track_num + 1)
+        ]
 
     @property
     def cddb_query_string(self) -> str:

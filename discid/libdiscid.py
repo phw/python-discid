@@ -156,9 +156,7 @@ def _get_features():
     if _features_available:
         c_features = (c_char_p * 32)()
         _LIB.discid_get_feature_list(c_features)
-        for feature in c_features:
-            if feature:
-                features.append(_decode(feature))
+        features.extend(_decode(feature) for feature in c_features if feature)
     else:
         # libdiscid <= 0.4.0
         features = ["read"]  # no generic platform yet
