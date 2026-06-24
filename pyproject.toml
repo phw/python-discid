@@ -51,4 +51,4 @@ discid = ["py.typed"]
 src=["discid"]
 
 [tool.ruff.lint]
-select = ["E", "F", "B", "I", "UP"]
+select = ["E", "F", "B", "I", "UP", "RUF"]

@@ -191,7 +191,7 @@ class Disc:
         # only the "read" (= TOC) feature is supported by put
         self._requested_features = ["read"]
 
-        offsets = [disc_sectors] + list(track_offsets)
+        offsets = [disc_sectors, *track_offsets]
         # libdiscid always expects an array of 100 integers, no matter the track count.
         c_offsets = (c_int * 100)()
         c_offsets[0] = offsets[0]

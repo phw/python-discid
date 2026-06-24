@@ -36,16 +36,16 @@ from discid.track import Track
 __version__ = "1.4.1"
 
 __all__ = [
-    "LIBDISCID_VERSION_STRING",
     "FEATURES",
     "FEATURES_IMPLEMENTED",
+    "LIBDISCID_VERSION_STRING",
     "Disc",
-    "Track",
     "DiscError",
     "TOCError",
-    "read",
-    "put",
+    "Track",
     "get_default_device",
+    "put",
+    "read",
 ]
 
 
