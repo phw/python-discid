@@ -1,6 +1,11 @@
 Changelog
 =========
 
+Changes in 1.4.2 (2026-07-10):
+------------------------------
+ * Provide Python wheel on PyPI.
+ * Removed remaining Python 2 specific code from ``util.py``.
+
 Changes in 1.4.1 (2026-06-24):
 ------------------------------
  * Mark package as typed by adding a ``py.typed`` marker file.
